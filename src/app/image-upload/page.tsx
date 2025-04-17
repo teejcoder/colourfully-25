@@ -230,12 +230,16 @@ export default function ImageUpload() {
                 {Object.entries(analysisResult.palette).map(([key, value]: [string, { rgb: number[]; population: number }]) => (
                   <div key={key} className="flex items-center gap-4">
                     <span
-                      className="block w-8 h-8 rounded"
+                      className="block w-8 h-8 rounded flex-shrink-0"
                       style={{ backgroundColor: `rgb(${value.rgb.join(",")})` }}
                     ></span>
-                    <div>
-                      <p className="font-medium">{key}</p>
-                      <p className="text-[0.875rem] text-gray-600">Population: {value.population}</p>
+                    <div className="min-w-0 w-full">
+                      <p className="font-medium truncate">{key}</p>
+                      <p className="text-[0.875rem] text-gray-600">
+                        Pop: {value.population > 9999 
+                          ? `${Math.round(value.population/1000)}k` 
+                          : value.population}
+                      </p>
                     </div>
                   </div>
                 ))}

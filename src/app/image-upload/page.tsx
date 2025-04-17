@@ -160,13 +160,13 @@ export default function ImageUpload() {
 
   return (
     <div
-      className={`text-white grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 ${isDragging ? 'bg-pink-200' : ''}`}
+      className={`text-white grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-4 pb-16 gap-8 sm:p-8 md:p-20 md:gap-16 ${isDragging ? 'bg-pink-200' : ''}`}
       onDragOver={handleDragOver}
       onDragLeave={handleDragLeave}
       onDrop={handleDrop}
     >
-      <main className="flex flex-col gap-[32px] row-start-2 items-center">
-        <h1 className="text-[4.375rem] font-bold rainbow-highlight">Colourfully</h1>
+      <main className="flex flex-col gap-[16px] sm:gap-[32px] row-start-2 items-center w-full">
+        <h1 className="text-[2.5rem] sm:text-[3.5rem] md:text-[4.375rem] font-bold rainbow-highlight">Colourfully</h1>
         <form onSubmit={handleSubmit} className="w-full max-w-md">
           <div className="mb-4 space-y-5 text-center">
             <div

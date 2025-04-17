@@ -7,10 +7,6 @@ Colourfully is an app that lets users upload an image and returns a comprehensiv
 
 Live(https://colourfully.vercel.app/)
 
-## Screenshots
-
-![Colourfully](https://i.postimg.cc/Y9Hn55DK/colourfully.png)
-
 ## Technologies Used
 
 - TypeScript

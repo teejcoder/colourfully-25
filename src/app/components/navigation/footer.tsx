@@ -7,7 +7,7 @@ export default function Footer() {
                 <p>&copy; {new Date().getFullYear()} <span className="rainbow-highlight">Colourfully</span></p>
                 <p>
                     <a href="https://tjmb.dev">
-                        <span className="hover:underline">tjmb.dev</span>
+                        <span className="hover:underline text-sm">tjmb.dev</span>
                     </a>
                 </p>
             </div>

@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const aboutParagraph = [
     "Colourfully is an app that lets users upload an image and returns the colour palette present in the image.",
-    "This app is designed to be simple and easy to use. Users upload an image by dragging & dropping, or clicking, and Colourfully will work its magic ✨",
-    "Colourfully uses Microsoft's Azure Image Analysis, built on advanced computer vision models. It is a powerful AI service that extracts rich visual information from images.",
+    "This app is designed to be simple and easy to use. The user uploads an image by dragging & dropping, or clicking and selecting the file. After that, let Colourfully work its magic ✨",
+    "Colourfully uses Microsoft's Image Analysis, built on advanced computer vision models. It is a powerful AI service that extracts rich visual information from images.",
 ]
 
 export default function AboutComponent() {

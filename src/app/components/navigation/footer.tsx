@@ -6,7 +6,6 @@ export default function Footer() {
             <div className="container mx-auto text-center">
                 <p>&copy; {new Date().getFullYear()} <span className="rainbow-highlight">Colourfully</span></p>
                 <p>
-                    Made with ❤️ by{" "}
                     <a href="https://tjmb.dev">
                         <span className="hover:underline">tjmb.dev</span>
                     </a>

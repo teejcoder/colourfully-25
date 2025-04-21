@@ -6,7 +6,7 @@ import AboutComponent from './components/about-component';
 export default function Home() {
   return (
     <div className="relative min-h-screen text-white">
-      <header className="relative flex flex-col items-center justify-center h-screen text-center">
+      <header className="relative container flex flex-col items-center justify-center h-screen text-center">
         <Vortex
           particleCount={1000}
           baseHue={123412}

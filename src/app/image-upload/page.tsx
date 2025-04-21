@@ -182,7 +182,7 @@ export default function ImageUpload() {
                 ref={fileInputRef}
                 name="image-drop"
                 type="file"
-                accept=".jpg,.jpeg,.png,.svg"
+                accept=".jpg,.jpeg,.png"
                 onChange={handleFileChange}
                 className="hidden"
               />
@@ -190,7 +190,7 @@ export default function ImageUpload() {
             <button
               type="submit"
               disabled={!file || loading}
-              className={`w-full text-white py-2 px-4 rounded ${loading ? `rainbow-background` : 'rainbow-background1'}`}
+              className={`w-full text-white py-4 px-4 rounded ${loading ? `rainbow-background` : 'rainbow-background1'}`}
             >
               {loading ? 'Processing...' : 'Analyze Image'}
             </button>

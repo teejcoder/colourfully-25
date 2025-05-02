@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
+import { IconLoader } from "@tabler/icons-react";
 
 export default function ImageUpload() {
   const [file, setFile] = useState<File | null>(null);
@@ -190,9 +191,9 @@ export default function ImageUpload() {
             <button
               type="submit"
               disabled={!file || loading}
-              className={`w-full text-white py-4 px-4 rounded ${loading ? `rainbow-background` : 'rainbow-background1'}`}
+              className={`w-full text-white py-4 px-4 rounded flex justify-center items-center ${loading ? `rainbow-background` : 'rainbow-background1'}`}
             >
-              {loading ? 'Processing...' : 'Analyze Image'}
+              {loading ? <IconLoader className='animate-spin'/> : 'Analyze Image'}
             </button>
             <span className='ml-auto text-gray-400 italic'>.jpeg or .png</span>
           </div>

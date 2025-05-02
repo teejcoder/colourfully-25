@@ -1,74 +1,65 @@
+# 🌈 Colourfully
 
-# Colourfully
+## 🚀 Description
 
-## Description
+**Colourfully** is a web application that allows users to upload an image and receive a detailed breakdown of its color palette. From dominant colors to nuanced palettes, Colourfully provides insights for designers, developers, and anyone passionate about colors.
 
-Colourfully is an app that lets users upload an image and returns a comprehensive breakdown of the colour palette in the image.
+🔗 **Live Demo**: [https://colourfully.vercel.app/](https://colourfully.vercel.app/)
 
-Live(https://colourfully.vercel.app/)
+---
 
-## Technologies Used
+## 🛠️ Technologies Used
 
-- TypeScript
-- Next
-- React
-- Cloudinary
-- Microsoft Image Analysis
-- Node Vibrant (verbose colour-palette analysis)
-- Clerk AUTH
-- Vercel
-- VS Code
-- Canva, remove.bg, favicon.io
+- **Frontend**: React, Next.js, TypeScript
+- **Backend**: Cloudinary, Microsoft Image Analysis API, Node Vibrant
+- **Authentication**: Clerk
+- **Deployment**: Vercel
+- **Development Tools**: VS Code, Canva, remove.bg, favicon.io
 
-## Roadmap to Prod
+---
 
-- ✅ API endpoints built - 14.apr.25
-- ✅ Typeface and colour scheme - 14.apr.25
-- ✅ Aceternity and Shadcn/ui installed - 14.apr.25
-- ✅ UI design - Landing page - 14.apr.25
-- ✅ UI design - Image analysis - 15.apr.25
-- ✅ Clerk AUTH implemented - 15.apr.25
-- ✅ Implement API fetching - 15.apr.25
-- ✅ UX/UI design - 15.apr.25
-- ✅ Links Working - 16.apr.25
-- ✅ Documentation - 16.apr.25
-- ✅ Test & validate - 16.apr.25
-- Launch 🚀 
+## 🙌 Acknowledgements
 
-# Acknowledgements
+Special thanks to the following services and communities for making this project possible:
 
-Thanks to Microsoft for providing the Image Analysis API.
-Thanks to the following services and communities:
-- Cloudinary for robust image hosting and processing
-- Clerk for seamless authentication services
-- Node Vibrant for detailed color extraction algorithms
-- Vercel for hosting and deployment infrastructure
-- The open-source community behind Next.js, React, and TypeScript
-- Shadcn/ui and Aceternity for beautiful UI components
+- **Microsoft**: Image Analysis API for advanced image processing
+- **Cloudinary**: Robust image hosting and processing
+- **Clerk**: Seamless authentication services
+- **Node Vibrant**: Detailed color extraction algorithms
+- **Vercel**: Hosting and deployment infrastructure
+- **Open Source**: Next.js, React, and TypeScript communities
+- **Shadcn/ui & Aceternity**: Beautiful UI components
 
-# Future Considerations
+---
 
-For future versions of Colourfully, I plan to implement:
+## 🌟 Future Considerations
 
-## Scaling
-- Optimise image processing for larger files and higher volume
+### Scaling
+- Optimise image processing for larger files and higher traffic
 - Implement caching strategies to reduce API calls
 - Add database storage for user history and preferences
-- Consider serverless functions for better resource allocation
+- Explore serverless functions for better resource allocation
 
-## Feature Enhancements
-- Add export options (Adobe, Figma, CSS variables)
-- Implement color accessibility scoring
-- Create shareable palettes with unique URLs
-- Add color naming with industry standards (Pantone, RAL)
-- Develop browser extensions for capturing colors from any website
-- Build mobile applications for on-the-go color capturing
+### Feature Enhancements
+- Export options (Adobe, Figma, CSS variables)
+- Color accessibility scoring
+- Shareable palettes with unique URLs
+- Color naming with industry standards (Pantone, RAL)
+- Browser extensions for capturing colors from any website
+- Mobile applications for on-the-go color capturing
 
-## Monetization Paths
-- Premium tier with advanced color analysis tools
-- API access for developers to integrate color analysis
-- Team collaboration features for design teams
+---
 
-# Contact
+## 📸 Screenshots
 
-https://tjmb.dev
+![Colourfully Screenshot](./public//cfss.png)
+
+---
+
+## 🧑‍💻 About Me
+
+Hi, I'm Tristan! I'm a passionate developer with a focus on building intuitive and visually appealing web applications. Colourfully is a project that showcases my skills in full-stack development, UI/UX design, and working with APIs.
+
+🔗 **Portfolio**: [https://tjmb.dev](https://tjmb.dev)  
+
+---

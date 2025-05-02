@@ -18,6 +18,17 @@
 
 ---
 
+## 📚 Things I Learned
+
+While building Colourfully, I gained valuable experience in the following areas:
+
+- **Working with APIs**: Integrating Cloudinary and Microsoft Image Analysis API taught me how to handle third-party services effectively.
+- **Image Processing**: Learned how to extract and analyse colour palettes using tools like Node Vibrant.
+- **Authentication**: Implemented secure and user-friendly authentication flows with Clerk.
+- **Frontend Development**: Improved my skills in building responsive and accessible UIs using Next.js and React.
+- **Deployment**: Gained hands-on experience deploying and optimising a project on Vercel.
+- **UI/UX Design**: Enhanced my understanding of creating visually appealing and user-friendly interfaces.
+
 ## 🙌 Acknowledgements
 
 Special thanks to the following services and communities for making this project possible:

@@ -18,9 +18,9 @@ export async function POST(request: Request) {
     return NextResponse.json({
       success: true,
       imageUrl: uploadResult.secure_url,
-    });
-  } catch (error) {
-    console.error('Error uploading file:', error);
-    return NextResponse.redirect('/error');
+    }, {status: 200});
+  } catch (error: unknown) {
+    const message = error instanceof Error ? error.message : 'unknown error - refresh & try again'
+    return NextResponse.json({error: message}, {status: 500})
   }
 }

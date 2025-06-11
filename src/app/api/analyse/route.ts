@@ -25,9 +25,9 @@ export async function POST(request: Request) {
       imageUrl,
       colorScheme,
       palette,
-    });
-  } catch (error) {
-    console.error('Error processing image:', error);
-    return NextResponse.redirect('/error');
+    }, {status: 200});
+  } catch (error: unknown) {
+    const message = error instanceof Error ? error.message : 'unknown error - refresh & try again'
+    return NextResponse.json({error: message}, {status: 500})
   }
 }

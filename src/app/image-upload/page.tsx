@@ -6,9 +6,10 @@ import { IconLoader } from "@tabler/icons-react";
 
 export default function ImageUpload() {
   const [file, setFile] = useState<File | null>(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState<boolean | false>(false);
+  const [error, setError] = useState<string | null>(null);
   const [analysisResult, setAnalysisResult] = useState<{ imageUrl: string; colorScheme: { dominantColorForeground: string; dominantColorBackground: string; accentColor: string }; palette: Record<string, { rgb: number[]; population: number }> } | null>(null);
-  const [isDragging, setIsDragging] = useState(false); 
+  const [isDragging, setIsDragging] = useState<boolean | false>(false); 
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
@@ -63,9 +64,12 @@ export default function ImageUpload() {
       }
 
       setAnalysisResult(analyseData);
-    } catch (error) {
+
+    } catch (error: unknown) {
       console.error('Processing failed:', error);
-      window.location.href = '/error';
+      const message = error instanceof Error ? error.message : 'Something went wrong. Please refresh and try again.';
+      setError(message);
+
     } finally {
       setLoading(false);
     }
@@ -150,9 +154,11 @@ export default function ImageUpload() {
         }
   
         setAnalysisResult(analyseData);
-      } catch (error) {
-        console.error('Processing failed:', error);
-        window.location.href = '/error';
+
+      } catch (error: unknown) {
+        const message = error instanceof Error ? error.message : 'Something went wrong. Please refresh and try again.';
+        setError(message);
+
       } finally {
         setLoading(false);
       }
@@ -168,6 +174,11 @@ export default function ImageUpload() {
     >
       <main className="flex flex-col gap-[16px] sm:gap-[32px] row-start-2 items-center w-full">
         <h1 className="text-[2.5rem] sm:text-[3.5rem] md:text-[4.375rem] font-bold rainbow-highlight">Colourfully</h1>
+        {error && (
+          <div className='mb-4 text-red-500 bg-red-100 rounded p-2 text-center'>
+            {error}
+          </div>
+        )}
         <form onSubmit={handleSubmit} className="w-full max-w-md">
           <div className="mb-4 space-y-5 text-center">
             <div

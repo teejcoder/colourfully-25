@@ -1,6 +1,5 @@
 import { ComputerVisionClient } from "@azure/cognitiveservices-computervision";
 import { ApiKeyCredentials } from "@azure/ms-rest-js";
-import { NextResponse } from 'next/server';
 
 const computerVisionKey = process.env.COMPUTER_VISION_KEY || "";
 const computerVisionEndpoint = process.env.COMPUTER_VISION_ENDPOINT || "";
@@ -20,8 +19,8 @@ export async function detectColorScheme(imageUrl: string) {
 
     const color = analysisResult.color;
     return color;
-  } catch (error) {
+  } catch (error: unknown) {
     console.error('Error detecting color scheme:', error);
-    return NextResponse.redirect('/error'); 
+    throw error;
   }
 }

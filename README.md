@@ -1,14 +1,14 @@
-# 🌈 Colourfully
+# Colourfully
 
-## 🚀 Description
+## Description
 
 **Colourfully** is a web application that allows users to upload an image and receive a detailed breakdown of its color palette. From dominant colors to nuanced palettes, Colourfully provides insights for designers, developers, and anyone passionate about colors.
 
-🔗 **Live Demo**: [https://colourfully.vercel.app/](https://colourfully.vercel.app/)
+**Live Demo**: [https://colourfully.vercel.app/](https://colourfully.vercel.app/)
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Frontend**: React, Next.js, TypeScript
 - **Backend**: Cloudinary, Microsoft Image Analysis API, Node Vibrant
@@ -18,7 +18,7 @@
 
 ---
 
-## 📚 Things I Learned
+## Things I Learned
 
 While building Colourfully, I gained valuable experience in the following areas:
 
@@ -29,7 +29,7 @@ While building Colourfully, I gained valuable experience in the following areas:
 - **Deployment**: Gained hands-on experience deploying and optimising a project on Vercel.
 - **UI/UX Design**: Enhanced my understanding of creating visually appealing and user-friendly interfaces.
 
-## 🙌 Acknowledgements
+## Acknowledgements
 
 Special thanks to the following services and communities for making this project possible:
 
@@ -43,7 +43,7 @@ Special thanks to the following services and communities for making this project
 
 ---
 
-## 🌟 Future Considerations
+## Future Considerations
 
 ### Scaling
 - Optimise image processing for larger files and higher traffic
@@ -61,16 +61,16 @@ Special thanks to the following services and communities for making this project
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ![Colourfully Screenshot](./public//cfss.png)
 
 ---
 
-## 🧑‍💻 About Me
+## About Me
 
-Hi, I'm Tristan! I'm a passionate developer with a focus on building intuitive and visually appealing web applications. Colourfully is a project that showcases my skills in full-stack development, UI/UX design, and working with APIs.
+Hi, I'm Tristan! I'm a developer with a focus on building intuitive and visually appealing web applications. Colourfully is a project that showcases my skills in full-stack development, UI/UX design, and working with APIs.
 
-🔗 **Portfolio**: [https://tjmb.dev](https://tjmb.dev)  
+**Portfolio**: [https://tjmb.dev](https://tjmb.dev)  
 
 ---

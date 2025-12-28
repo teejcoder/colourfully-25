@@ -8,9 +8,17 @@ export default function ImageUpload() {
   const [file, setFile] = useState<File | null>(null);
   const [loading, setLoading] = useState<boolean | false>(false);
   const [error, setError] = useState<string | null>(null);
-  const [analysisResult, setAnalysisResult] = useState<{ imageUrl: string; colorScheme: { dominantColorForeground: string; dominantColorBackground: string; accentColor: string }; palette: Record<string, { rgb: number[]; population: number }> } | null>(null);
   const [isDragging, setIsDragging] = useState<boolean | false>(false); 
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const [analysisResult, setAnalysisResult] = useState<{ 
+    imageUrl: string; 
+    colorScheme: { 
+      dominantColorForeground: string; 
+      dominantColorBackground: string; 
+      accentColor: string 
+    }; 
+    palette: Record<string, { rgb: number[]; population: number }> } | null
+  >(null);
 
   useEffect(() => {
     const savedData = localStorage.getItem("analysisResult");
